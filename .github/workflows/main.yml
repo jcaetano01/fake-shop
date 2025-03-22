@@ -21,7 +21,7 @@ jobs:
          context: ./src
          push: true
          file: ./src/Dockerfile
-         tags: joaocaetano21/fake-shop:v1
+         tags: joaocaetano21/fake-shop:v${{ github.run_number }}
           
   CD:
    needs: [CI]
